@@ -8,10 +8,15 @@
 
     //ENTRADA
 
-    
+    let caixa = [];
     //PROCESSAMENTO
+    for (let index = 0; index < 5; index++) {
+        const num = Number(prompt(`Insira um número.`).trim());
+        caixa.push(num)
+    }
 
-    
+    alert(`${Math.max(...caixa)}.`);
+
     //SAÍDA
 
 </script>

@@ -7,12 +7,15 @@
     */
 
     //ENTRADA
-        const notas = Number(prompt(`Quantas notas o aluno obteve?`).trim());
-        
+    const notasob = Number(prompt(`Quantas notas o aluno obteve?`).trim());
+    let media = 0;
 
     //PROCESSAMENTO
-    
-
+    for (let i = 1; i <= notasob; i++) {
+        const notatot = Number(prompt(`Informe quais as notas do aluno.`).trim());
+        media += notatot / notasob;
+    }
+    alert(`A média obtida pelo aluno é: ${media.toFixed(1).replace(".", ",")}`);
     //SAÍDA
 
 </script>

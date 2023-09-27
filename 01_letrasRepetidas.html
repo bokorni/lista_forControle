@@ -10,17 +10,17 @@
     */
 
     //ENTRADA
-     let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
     let newlist = [];
     for (let contador = 0; contador < listaDeLetras.length; contador++) {
         const letter = listaDeLetras[contador].toLowerCase();
-        if(newlist.includes(letter) == false){
-        newlist.push(letter);
+        if (newlist.includes(letter) == false) {
+            newlist.push(letter);
         }
     }
     //PROCESSAMENTO
-   
-    
+
+
     //SAÍDA
     alert(newlist.sort().join(", "));
 </script>
