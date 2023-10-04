@@ -8,11 +8,26 @@
     */
 
     //ENTRADA
-
+    let repre = [];
+    let cand1 = 0;
+    let cand2 = 0;
+    let cand3 = 0;
+    const eleitor = Number(prompt(`Insira a quantidade de eleitores`))
 
     //PROCESSAMENTO
-
-
+    for(cand = 1; cand<4; cand++){
+        const candidato = prompt(`Insira o nome de seu candidato` + cand ).toLowerCase();
+        repre.push(candidato);
+    }
+    for(v = 0; v < eleitor; v++) {
+        const voto = prompt(`Deseja votar em qual dos candidatos? 1, 2 ou 3?` + repre.join("-")).toLowerCase();
+    }
+    voto = 1? cand1++ : voto = 2? cand2++ : voto = 3? cand3++ : alert(`Inválido.`)
+    let porc1 = `${repre.splice(0, 1)} teve ${cand1} votos, com uma porcentagem de ${Math.round(cand1*100/eleitor)}%`;
+    let porc2 = `${repre.splice(0, 1)} teve ${cand2} votos, com uma porcentagem de ${Math.round(cand2*100/eleitor)}%`;
+    let porc3 = `${repre.splice(0, 1)} teve ${cand3} votos, com uma porcentagem de ${Math.round(cand3*100/eleitor)}%`;
+    
+    cand1 > cand2 && cand1 > cand3 ? porc1 = porc1 + `Ganhou a votação de representante` :    cand2 > cand1 && cand2 > cand3 ? porc2 = porc2 + `Ganhou a votação de representante`: porc3 = porc3 + `Ganhou a votação de representante.`
     //SAÍDA
 
 </script>

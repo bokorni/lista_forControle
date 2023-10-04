@@ -6,11 +6,18 @@
     */
 
     //ENTRADA
+    let plus = 0;
+    let media = [];
 
 
     //PROCESSAMENTO
+    for(i = 1; i<6; i++) {
+        const nm = Number(prompt("Insira um número " + i).trim().replace(",","."));
+        plus += nm;
+        media.push(nm);
 
-
+    }
+    alert(`Este é o resultado da soma: ${plus}, esta é a média ${plus/media.length}`);
     //SAÍDA
 
 </script>

@@ -6,7 +6,18 @@
     */
 
     //ENTRADA
-
+    let população = 50000;
+    for(year = 1; year<11; year++){
+        let currentyr = [year];
+        if(currentyr == 5){
+            let popprevista = população + população*(0.015*currentyr);
+            alert(`Esta cidade ao longo de 5 anos terá uma população total de ${popprevista} habitantes.`);
+        }
+        if(currentyr == 10){
+            let popprevista = população + população*(0.015*currentyr);
+            alert(`Esta cidade ao longo de 10 anos terá uma população total de ${popprevista} habitantes.`);
+        }
+    }
     
     //PROCESSAMENTO
     

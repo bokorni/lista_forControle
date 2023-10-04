@@ -6,11 +6,19 @@
     */
 
     //ENTRADA
+    const população = 80000;
+    let year = 0;
 
-    
+
     //PROCESSAMENTO
+    for (i = 0; i < população; i++) {
+        year++
+        let crescimento = (year * 0.03)
+        if (crescimento * população <= 200000) {
+            alert(`Serão necessários ${year} anos.`)
+        }
+    }
 
-    
     //SAÍDA
 
 </script>

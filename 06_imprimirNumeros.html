@@ -6,10 +6,32 @@
     */
 
     //ENTRADA
-
-    
+    const inicio = Number(prompt(`Insira um número para começar.`).trim());
+    const final = Number(prompt(`Insira um número para terminar.`).trim());
+    let imp = [];
+    let par = [];
+     
+  
     //PROCESSAMENTO
+  if(final<=inicio){
+        alert(`Erro.`)
+    }
+    else{ 
+    alert(`O último número é maior que o primeiro.`);
+    
+    for (i =inicio; i< final; i++) {
+        let numero = [i]
+        if(numero % 2 == 0){
+            par.push(numero)
+        }
+        else {
+            imp.push(numero)
+        }
 
+    }
+         alert(`Ímpares: ${imp}; Pares: ${par}.`)
+    
+    }
     
     //SAÍDA
 
